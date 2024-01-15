@@ -4,9 +4,9 @@ console.log(`${name} is brilliant`)
 
 const strings = ["Home", "Shop", "About Me"];
 
-function capitalize(x) {
-    return x.toUpperCase()
-}
+const capitalize = (x) => {
+  return x.toUpperCase();
+};
 
 const listItems = strings.map(capitalize);
 console.log(listItems)
