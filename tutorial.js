@@ -19,3 +19,11 @@ const listItemss = strings.map(keys);
 console.log(listItemss);
 
 console.log(["Items", ...strings])
+
+const temp = {
+    "Name": "Olu"
+}
+const {Name} = temp
+
+console.log({...temp, "Age": 24});
+console.log(Name)
