@@ -17,3 +17,5 @@ function keys(x, i) {
 
 const listItemss = strings.map(keys);
 console.log(listItemss);
+
+console.log(["Items", ...strings])
