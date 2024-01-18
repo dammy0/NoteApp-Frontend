@@ -27,5 +27,13 @@ const temp = {
 const {Name} = temp
 
 console.log({...temp, "Age": 24});
-console.log(Name)
-console.log({...temp, "id":124, "Name": "Mayo"})
+console.log(Name);
+console.log({...temp, "id":124, "Name": "Mayo"});
+
+let menu
+
+if (menu) {
+    console.log(true)
+} else {
+    console.log(false)
+}
