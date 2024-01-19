@@ -30,7 +30,7 @@ console.log({...temp, "Age": 24});
 console.log(Name);
 console.log({...temp, "id":124, "Name": "Mayo"});
 
-let menu
+let menu = 30
 
 if (menu) {
     console.log(true)
