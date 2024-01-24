@@ -1,9 +1,10 @@
 import './App.css';
+import NotePage from './containers/NotePage';
 
 function App() {
   return (
     <div className="App">
-      My App
+      <NotePage />
     </div>
   );
 }
