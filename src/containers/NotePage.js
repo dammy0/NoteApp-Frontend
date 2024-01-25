@@ -5,8 +5,6 @@ import Notes from "../components/Notes"
 const NotePage = () => {
   return (
     <>
-      <div>NotePage</div>
-      <Header />
       <Notes />
     </>
   );
