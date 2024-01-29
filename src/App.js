@@ -19,7 +19,7 @@ function App() {
         <Route path="/" exact component={HomePage} />
         <Route path="/login" exact component={LoginPage} />
         <Route path="/notes" exact component={NoteListPage} />
-        <Route path="/note/:id" exact component={NotePage} />
+        <Route path="/note/:id" component={NotePage} />
       </Routes>
     </Router>
   );
