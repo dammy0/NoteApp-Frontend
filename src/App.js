@@ -17,7 +17,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" exact component={HomePage} />
-        <Route path="/login" exact component={LoginPage} />
+        <Route path="/login" component={LoginPage} />
         <Route path="/notes" component={NoteListPage} />
         <Route path="/note/:id" component={NotePage} />
       </Routes>
