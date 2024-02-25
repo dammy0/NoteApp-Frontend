@@ -49,3 +49,34 @@ div {
 .content .contentSpan {
     color: rgb(172, 113, 226);
 }
+
+/* .loginForm {
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+} */
+
+/* .loginForm {
+    display: block;
+    text-align: center;
+} */
+/* form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+} */
+
+.loginFormDiv {
+    display: block;
+    text-align: center;
+}
+
+.loginForm {
+    display: inline-block;
+    text-align: left;
+}
