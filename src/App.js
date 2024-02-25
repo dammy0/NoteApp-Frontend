@@ -1,7 +1,6 @@
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route
+  createBrowserRouter,
+  RouterProvider
 } from "react-router-dom";
 
 import './App.css';
@@ -12,16 +11,33 @@ import LoginPage from "./containers/LoginPage";
 import NoteListPage from "./containers/NoteListPage";
 import NotePage from "./containers/NotePage";
 
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomePage/>,
+    errorElement: <div>404 Not Found</div>
+  },
+  {
+    path: "/login",
+    element: <LoginPage/>,
+  },
+  {
+    path: "/notes",
+    element: <NoteListPage/>
+  },
+  {
+    path: "/note/:noteId",
+    element: <NotePage/>
+  }
+]);
+
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" exact component={HomePage} />
-        <Route path="/login" component={LoginPage} />
-        <Route path="/notes" component={NoteListPage} />
-        <Route path="/note/:id" component={NotePage} />
-      </Routes>
-    </Router>
+    <div>
+      <RouterProvider router={router} />
+    </div>
+    //<RouterProvider router={router}/>
   );
 }
 

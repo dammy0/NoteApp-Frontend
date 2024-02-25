@@ -1,1 +1,51 @@
+body {
+    background-color: #001B42;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
 
+div {
+    color: white;
+}
+
+.link {
+    color: white;
+    font-size:large;
+    text-decoration: None;
+    font-weight:bold;
+    width: 150px;
+}
+
+.link:hover {
+    color: blueviolet;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px
+    
+}
+
+.leftNav {
+    display: flex;
+}
+
+.rightNav {
+    display: flex;
+}
+
+.rightNav .link {
+    width: 80px
+}
+
+.content {
+    padding: 30px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    font-size: xxx-large;
+    font-weight: bolder;
+}
+
+.content .contentSpan {
+    color: rgb(172, 113, 226);
+}

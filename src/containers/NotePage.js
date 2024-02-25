@@ -1,11 +1,14 @@
-import React from 'react'
-import Header from "../components/Header"
-import Notes from "../components/Notes"
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import Notes from "../components/Notes";
 
 const NotePage = () => {
+  const params = useParams();
+  
   return (
     <>
       <Notes />
+      {params.noteId}
     </>
   );
 }
