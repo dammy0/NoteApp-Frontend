@@ -6,24 +6,26 @@ const Header = () => {
   return (
     <div>
       <div className="nav">
-        <div>Logo</div>
+        <Link className="navLink" to="/">
+          <div>Logo</div>
+        </Link>
         <nav className="leftNav">
-          <Link className="link" to="/">
+          <Link className="navLink" to="/">
             Home
           </Link>
-          <Link className="link" to="/">
+          <Link className="navLink" to="/">
             About
           </Link>
-          <Link className="link" to="/">
+          <Link className="navLink" to="/">
             Pricing
           </Link>
         </nav>
         <nav className="rightNav">
-          <Link className="link" to="/login">
+          <Link className="navLink" to="/login">
             Login
           </Link>
-          <Link className="link" to="/">
-            Signup
+          <Link className="navLink" to="/">
+            Sign Up
           </Link>
         </nav>
       </div>

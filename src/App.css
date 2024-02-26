@@ -1,41 +1,27 @@
 body {
     background-color: #001B42;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
-
-div {
-    color: white;
-}
-
-.link {
-    color: white;
-    font-size:large;
-    text-decoration: None;
-    font-weight:bold;
-    width: 150px;
-}
-
-.link:hover {
-    color: blueviolet;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
-    padding: 30px
-    
+    padding: 30px 10px 30px 10px;
 }
 
-.leftNav {
-    display: flex;
+.navLink {
+    color: white;
+    font-size: medium;
+    text-decoration: None;
+    font-weight: bold;
+    margin: 0px 15px 0px 15px;
+    text-align: center;
 }
 
-.rightNav {
-    display: flex;
-}
-
-.rightNav .link {
-    width: 80px
+.navLink:hover {
+    color: blueviolet;
+    transition: 0.5s;
 }
 
 .content {
@@ -74,9 +60,73 @@ div {
 .loginFormDiv {
     display: block;
     text-align: center;
+    margin-top: 150px;
 }
 
 .loginForm {
     display: inline-block;
     text-align: left;
+    background-color: white;
+    color: #001B42;
+    padding: 30px;
+}
+
+.loginForm div {
+    color: #001B42;
+    font-size:larger;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.loginForm label {
+    color: #999;
+}
+
+.loginForm input {
+    border: none;
+    border-bottom: 1px solid #515151;
+    appearance: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 3px;
+    width: 250px;
+    outline: none;
+}
+
+.loginForm .invalidCredentials {
+    color: rgb(220, 45, 45);
+    display: none;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.loginForm .forgotPassword {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: right;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.loginForm .forgotPassword a {
+    color: blueviolet;
+}
+
+.loginForm .submit {
+    background-color: rgb(222, 188, 253);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.loginForm .submit:hover {
+    background-color: blueviolet;
+    transition: 0.5s;
 }
