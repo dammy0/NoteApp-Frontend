@@ -97,7 +97,6 @@ body {
 
 .loginForm .invalidCredentials {
     color: rgb(220, 45, 45);
-    display: none;
     font-size: 14px;
     font-weight: normal;
     margin-top: 15px;

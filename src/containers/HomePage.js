@@ -10,9 +10,6 @@ const HomePage = () => {
       <div className='content'>
         <spam className='contentSpan'>10x </spam>Your Productivity Using this NoteApp
       </div>
-      <div>
-        next
-      </div>
     </div>
   );
 }
