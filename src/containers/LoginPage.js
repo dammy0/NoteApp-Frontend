@@ -6,7 +6,7 @@ import LoginForm from '../components/LoginForm'
 
 const LoginPage = () => {
   const [username, setUsername] = useState("");
-  const [invalidCredDisplay, setInvalidCredDisplay] = useState("block");
+  const [invalidCredDisplay, setInvalidCredDisplay] = useState("none");
 
   function updatedUsername({ target }) {
     setUsername(target.value)
