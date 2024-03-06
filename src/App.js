@@ -4,8 +4,6 @@ import {
 } from "react-router-dom";
 
 import './App.css';
-import Header from "./components/Header";
-import Footer from "./components/Footer";
 import HomePage from "./containers/HomePage";
 import LoginPage from "./containers/LoginPage";
 import NoteListPage from "./containers/NoteListPage";
@@ -27,7 +25,7 @@ const router = createBrowserRouter([
     element: <NoteListPage/>
   },
   {
-    path: "/note/:noteId",
+    path: "/notes/:noteId",
     element: <NotePage/>
   }
 ]);

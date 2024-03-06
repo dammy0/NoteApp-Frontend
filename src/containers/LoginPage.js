@@ -12,20 +12,21 @@ const LoginPage = () => {
     setUsername(target.value)
   }
 
-  let unavailable_usernames = ['damilola', 'anjola']
-  useEffect(()=>{
+  useEffect(() => {
     const timer = setTimeout(() => {
-      console.log("fetch call")
+      console.log("fetch call");
+
+      let unavailable_usernames = ["damilola", "anjola"];
 
       if (unavailable_usernames.some((el) => el === username)) {
-        setInvalidCredDisplay('block')
+        setInvalidCredDisplay("block");
       } else {
         setInvalidCredDisplay("none");
       }
-    }, 500)
+    }, 500);
 
-    return () => clearTimeout(timer)
-  }, [username])
+    return () => clearTimeout(timer);
+  }, [username]);
 
   return (
     <div>

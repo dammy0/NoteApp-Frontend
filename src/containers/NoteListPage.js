@@ -23,16 +23,20 @@ const NoteListPage = () => {
 
   return (
     <div>
-      <h2>My Notes</h2>
+      <div>
+        <h2>&#9782; Notes</h2>
+        <p>{notes.length}</p>
+      </div>
       <ul>
-        {notes.forEach(({title, content, key})=>{
-          <li key={key}>
-            <Link to={`/note/${key}`}>{title}</Link>
-          </li>;
-        })}
+        {notes.map(({ title, content, id }) => (
+          <li key={id}>
+            <Link to={`/notes/${id}`}>{title}</Link>
+          </li>
+        ))}
       </ul>
+      <button>New Note</button>
     </div>
-  )
+  );
 }
 
 export default NoteListPage
