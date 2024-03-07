@@ -39,4 +39,4 @@ const NoteListPage = () => {
   );
 }
 
-export default NoteListPage
+export default NoteListPage;

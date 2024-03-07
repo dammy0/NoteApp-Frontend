@@ -60,4 +60,4 @@ const NotePage = () => {
   );
 }
 
-export default NotePage
+export default NotePage;
